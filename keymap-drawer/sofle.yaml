@@ -1,10 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))', ESC, Q, W, E, R,
-    T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))', '''', LSHFT, Z, X, '(ZMK
-      HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))', '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))',
-    '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))', MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL,
-    RALT, RGUI]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DE SHARP S, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, S, A, D, F, G, H, J, K, L, DE SHARP S,
+    '''', LSHFT, Z, X, DE U UMLAUT, DE A UMLAUT, DE O UMLAUT, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
   lower:
   - '&studio_unlock'
   - F1
@@ -134,7 +131,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
+  - DE A UMLAUT
   - ''
   - ''
   - ''
@@ -146,7 +143,7 @@ layers:
   - RGB SAD
   - RGB SAI
   - RGB EFF
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))
+  - DE O UMLAUT
   - ''
   - ''
   - ''
@@ -158,7 +155,7 @@ layers:
   - ''
   - ''
   - ''
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
+  - DE U UMLAUT
   - ''
   - ''
   - ''
@@ -172,7 +169,7 @@ layers:
   - ''
   - RGB TOG
   - ''
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))
+  - DE SHARP S
   - ''
   - ''
   - ''
