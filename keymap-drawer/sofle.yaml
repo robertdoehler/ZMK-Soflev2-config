@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DE SHARP S, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, S, A, D, F, G, H, J, K, L, DE SHARP S,
-    '''', LSHFT, Z, X, DE U UMLAUT, DE A UMLAUT, DE O UMLAUT, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', O, ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, S, A, D, F, G, H, J, K, L, DE SHARP S, '''', LSHFT,
+    Z, X, O, O, O, MUTE, '', N, M, ',', ., /, RSHFT, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI]
   lower:
   - '&studio_unlock'
   - F1
@@ -131,7 +131,7 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - DE A UMLAUT
+  - O
   - ''
   - ''
   - ''
@@ -143,7 +143,7 @@ layers:
   - RGB SAD
   - RGB SAI
   - RGB EFF
-  - DE O UMLAUT
+  - O
   - ''
   - ''
   - ''
@@ -155,7 +155,7 @@ layers:
   - ''
   - ''
   - ''
-  - DE U UMLAUT
+  - O
   - ''
   - ''
   - ''
@@ -169,7 +169,7 @@ layers:
   - ''
   - RGB TOG
   - ''
-  - DE SHARP S
+  - O
   - ''
   - ''
   - ''
