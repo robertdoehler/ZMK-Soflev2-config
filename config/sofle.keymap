@@ -45,6 +45,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
         };
+
+        mod_dance_parantheses: mod_dance_parantheses {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOD_DANCE_PARANTHESES";
+            #binding-cells = <0>;
+            bindings = <&kp DE_LEFT_PARENTHESIS>, <&kp DE_RPAR>;
+
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -63,7 +72,7 @@
             bindings = <
 &kp ESCAPE  &kp N1    &kp N2    &kp N3           &kp N4           &kp N5                                  &kp N6     &kp N7      &kp N8        &kp N9      &kp N0    &kp DE_SHARP_S
 &kp TAB     &kp DE_Z  &kp DE_Y  &kp DE_U         &kp DE_A         &kp DE_Q                                &kp DE_P   &kp DE_B    &kp DE_M      &kp DE_L    &kp DE_F  &kp DE_J
-&kp LSHIFT  &kp DE_C  &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_A                                &kp DE_D   &kp DE_T    &kp DE_N      &kp DE_R    &kp DE_H  &kp DE_SHARP_S
+&kp LSHIFT  &kp DE_C  &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_O                                &kp DE_D   &kp DE_T    &kp DE_N      &kp DE_R    &kp DE_H  &kp DE_SHARP_S
 &kp LCTRL   &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp LG(TAB)    &tog 3  &kp DE_W   &kp DE_G    &kp DE_COMMA  &kp DE_DOT  &kp DE_K  &kp RSHIFT
                       &kp LGUI  &kp LALT         &kp BACKSPACE    &kp DE_SPACE     &mo 1          &mo 2   &kp ENTER  &kp DELETE  &kp RALT      &kp RGUI
             >;
@@ -85,11 +94,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp DE_CARET  &kp DE_ACUTE        &kp DE_SQT           &kp DE_AT              &kp DE_SQT            &none                               &kp DE_AMPERSAND  &kp DE_AT_SIGN  &kp DE_SECTION  &kp DE_TILDE  &kp DE_EURO     &kp DE_DOLLAR
-&trans        &kp DE_EXCLAMATION  &kp DE_QUESTION      &mod_morph_underscore  &kp DE_DOUBLE_QUOTES  &kp DE_PIPE                         &kp DE_PLUS       &kp DE_N7       &kp DE_N8       &kp DE_N9     &kp DE_SLASH    &kp DE_HASH
-&trans        &kp DE_LESS_THAN    &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE      &kp DE_LPAR           &kp DE_SLASH                        &kp DE_MINUS      &kp DE_N4       &kp DE_N5       &kp DE_N6     &kp DE_PERCENT  &kp RSHFT
-&trans        &kp DE_GT           &kp DE_RBKT          &kp DE_RIGHT_BRACE     &kp DE_RPAR           &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK      &kp DE_N1       &kp DE_N2       &kp DE_N3     &kp DE_EQUAL    &kp RCTRL
-                                  &trans               &trans                 &trans                &trans            &trans    &trans  &trans            &trans          &trans          &kp DE_N0
+&kp DE_CARET  &kp DE_ACUTE        &kp DE_SQT           &kp DE_AT              &kp DE_SQT              &none                               &kp DE_AMPERSAND  &kp DE_AT_SIGN  &kp DE_SECTION  &kp DE_TILDE  &kp DE_EURO     &kp DE_DOLLAR
+&trans        &kp DE_EXCLAMATION  &kp DE_QUESTION      &mod_morph_underscore  &kp DE_DOUBLE_QUOTES    &kp DE_PIPE                         &kp DE_PLUS       &kp DE_N7       &kp DE_N8       &kp DE_N9     &kp DE_SLASH    &kp DE_HASH
+&trans        &kp DE_LESS_THAN    &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE      &mod_dance_parantheses  &kp DE_SLASH                        &kp DE_MINUS      &kp DE_N4       &kp DE_N5       &kp DE_N6     &kp DE_PERCENT  &kp RSHFT
+&trans        &kp DE_GT           &kp DE_RBKT          &kp DE_RIGHT_BRACE     &kp DE_RPAR             &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK      &kp DE_N1       &kp DE_N2       &kp DE_N3     &kp DE_EQUAL    &kp RCTRL
+                                  &trans               &trans                 &trans                  &trans            &trans    &trans  &trans            &trans          &trans          &kp DE_N0
             >;
 
             sensor-bindings =
