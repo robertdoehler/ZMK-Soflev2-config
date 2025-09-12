@@ -6,7 +6,6 @@
 
 #include "keys_de.h"
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -95,11 +94,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp DE_CARET  &kp DE_ACUTE        &kp DE_SQT           &kp DE_AT              &kp DE_SQT              &none                               &kp DE_AMPERSAND  &kp DE_AT_SIGN  &kp DE_SECTION  &kp DE_TILDE  &kp DE_EURO     &kp DE_DOLLAR
-&trans        &kp DE_EXCLAMATION  &kp DE_QUESTION      &mod_morph_underscore  &kp DE_DOUBLE_QUOTES    &kp DE_PIPE                         &kp DE_PLUS       &kp DE_N7       &kp DE_N8       &kp DE_N9     &kp DE_SLASH    &kp DE_HASH
-&trans        &kp DE_LESS_THAN    &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE      &mod_dance_parantheses  &kp DE_SLASH                        &kp DE_MINUS      &kp DE_N4       &kp DE_N5       &kp DE_N6     &kp DE_PERCENT  &trans
-&trans        &kp DE_GT           &kp DE_RBKT          &kp DE_RIGHT_BRACE     &kp DE_RPAR             &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK      &kp DE_N1       &kp DE_N2       &kp DE_N3     &kp DE_EQUAL    &trans
-                                  &trans               &trans                 &trans                  &trans            &trans    &trans  &trans            &trans          &trans          &kp DE_N0
+&kp DE_CARET  &kp DE_ACUTE        &kp DE_SQT           &kp DE_AT              &kp DE_SQT              &none                               &kp DE_AMPERSAND  &kp DE_AT_SIGN  &kp DE_SECTION  &kp DE_TILDE   &kp DE_EURO     &kp DE_DOLLAR
+&trans        &kp DE_EXCLAMATION  &kp DE_QUESTION      &mod_morph_underscore  &kp DE_DOUBLE_QUOTES    &kp DE_PIPE                         &kp DE_PLUS       &kp DE_N7       &kp DE_N8       &kp DE_N9      &kp DE_SLASH    &kp DE_HASH
+&trans        &kp DE_LESS_THAN    &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE      &mod_dance_parantheses  &kp DE_SLASH                        &kp DE_MINUS      &kp DE_N4       &kp DE_N5       &kp DE_N6      &kp DE_PERCENT  &trans
+&trans        &kp DE_GT           &kp DE_RBKT          &kp DE_RIGHT_BRACE     &kp DE_RPAR             &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK      &kp DE_N1       &kp DE_N2       &kp DE_N3      &kp DE_EQUAL    &trans
+                                  &trans               &trans                 &trans                  &trans            &trans    &trans  &trans            &kp DE_N0       &kp DE_COMMA    &kp DE_PERIOD
             >;
 
             sensor-bindings =
