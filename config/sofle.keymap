@@ -119,8 +119,8 @@
             bindings = <
 &kp F1  &kp F2       &kp F3     &kp F4       &kp F5      &kp F6                                         &kp F7         &kp F8       &kp F9    &kp F10    &kp F11  &kp F12
 &trans  &kp INS      &kp PSCRN  &kp K_CMENU  &kp K_UNDO  &kp K_REDO                                     &none          &kp LS(TAB)  &kp UP    &kp TAB    &none    &none
-&trans  &none        &none      &none        &none       &none                                          &kp PG_UP      &kp LEFT     &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp K_PASTE  &none      &kp K_CUT    &kp K_COPY  &none       &kp LG(TAB)    &kp LC(LS(ESCAPE))  &kp PAGE_DOWN  &kp HOME     &none     &kp END    &none    &none
+&trans  &kp K_COPY   &none      &none        &none       &none                                          &kp PG_UP      &kp LEFT     &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans  &kp K_PASTE  &kp K_CUT  &none        &none       &none       &kp LG(TAB)    &kp LC(LS(ESCAPE))  &kp PAGE_DOWN  &kp HOME     &none     &kp END    &none    &none
                      &trans     &trans       &trans      &trans      &trans         &trans              &trans         &trans       &trans    &trans
             >;
 
