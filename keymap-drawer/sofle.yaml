@@ -149,7 +149,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ''
+  - COPY
   - ''
   - ''
   - ''
@@ -162,9 +162,9 @@ layers:
   - BSPC
   - {t: ▽, type: trans}
   - PASTE
-  - ''
   - CUT
-  - COPY
+  - ''
+  - ''
   - ''
   - Gui+TAB
   - Ctl+Sft+ESCAPE
