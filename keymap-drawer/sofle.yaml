@@ -137,11 +137,11 @@ layers:
   - F11
   - F12
   - {t: ▽, type: trans}
-  - INS
-  - PSCRN
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z))
   - CMENU
-  - UNDO
-  - REDO
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD A))
+  - INSERT
   - ''
   - Sft+TAB
   - UP
@@ -149,11 +149,11 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - COPY
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD C))
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD S))
   - ''
   - ''
-  - ''
-  - ''
+  - PRINTSCREEN
   - PG UP
   - LEFT
   - DOWN
@@ -161,8 +161,8 @@ layers:
   - DEL
   - BSPC
   - {t: ▽, type: trans}
-  - PASTE
-  - CUT
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD V))
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD X))
   - ''
   - ''
   - ''
