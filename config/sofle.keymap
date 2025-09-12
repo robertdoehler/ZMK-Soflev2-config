@@ -117,11 +117,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp F1  &kp F2       &kp F3     &kp F4       &kp F5      &kp F6                                         &kp F7         &kp F8       &kp F9    &kp F10    &kp F11  &kp F12
-&trans  &kp INS      &kp PSCRN  &kp K_CMENU  &kp K_UNDO  &kp K_REDO                                     &none          &kp LS(TAB)  &kp UP    &kp TAB    &none    &none
-&trans  &kp K_COPY   &none      &none        &none       &none                                          &kp PG_UP      &kp LEFT     &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
-&trans  &kp K_PASTE  &kp K_CUT  &none        &none       &none       &kp LG(TAB)    &kp LC(LS(ESCAPE))  &kp PAGE_DOWN  &kp HOME     &none     &kp END    &none    &none
-                     &trans     &trans       &trans      &trans      &trans         &trans              &trans         &trans       &trans    &trans
+&kp F1  &kp F2        &kp F3        &kp F4       &kp F5        &kp F6                                              &kp F7         &kp F8       &kp F9    &kp F10    &kp F11  &kp F12
+&trans  &kp LC(DE_Z)  &kp LC(DE_Y)  &kp K_CMENU  &kp LC(DE_A)  &kp INSERT                                          &none          &kp LS(TAB)  &kp UP    &kp TAB    &none    &none
+&trans  &kp LC(DE_C)  &kp LC(DE_S)  &none        &none         &kp PRINTSCREEN                                     &kp PG_UP      &kp LEFT     &kp DOWN  &kp RIGHT  &kp DEL  &kp BSPC
+&trans  &kp LC(DE_V)  &kp LC(DE_X)  &none        &none         &none            &kp LG(TAB)    &kp LC(LS(ESCAPE))  &kp PAGE_DOWN  &kp HOME     &none     &kp END    &none    &none
+                      &trans        &trans       &trans        &trans           &trans         &trans              &trans         &trans       &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
