@@ -55,10 +55,100 @@
             tapping-term-ms = <200>;
         };
 
-        mod_morph_numrow_1: mod_morph_numrow_1 {
+        mm_nr1: mm_nr1 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_MORPH_NUMROW_1";
+            label = "MM_NR1";
             bindings = <&kp DE_N1>, <&kp DE_EXCLAMATION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr3: mm_nr3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR3";
+            bindings = <&kp DE_N3>, <&kp DE_AMPERSAND>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr4: mm_nr4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR4";
+            bindings = <&kp DE_N4>, <&kp DE_AT_SIGN>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr5: mm_nr5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR5";
+            bindings = <&kp DE_N5>, <&kp DE_HASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr6: mm_nr6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR6";
+            bindings = <&kp DE_N6>, <&kp DE_SQT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr7: mm_nr7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR7";
+            bindings = <&kp DE_N7>, <&kp DE_DOUBLE_QUOTES>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr8: mm_nr8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR8";
+            bindings = <&kp DE_N8>, <&kp DE_MINUS>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr9: mm_nr9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR9";
+            bindings = <&kp DE_N9>, <&kp DE_UNDERSCORE>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr0: mm_nr0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR0";
+            bindings = <&kp DE_N0>, <&kp DE_EQUAL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nr2: mm_nr2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NR2";
+            bindings = <&kp N2>, <&kp DE_QUESTION>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+
+        mm_nrss: mm_nrss {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MM_NRSS";
+            bindings = <&kp DE_SHARP_S>, <&kp DE_CARET>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -79,15 +169,15 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE  &mod_morph_numrow_1  &kp N2    &kp N3           &kp N4           &kp N5                                  &kp N6     &kp N7      &kp N8        &kp N9      &kp N0    &kp DE_SHARP_S
-&kp TAB     &kp DE_Z             &kp DE_Y  &kp DE_U         &kp DE_A         &kp DE_Q                                &kp DE_P   &kp DE_B    &kp DE_M      &kp DE_L    &kp DE_F  &kp DE_J
-&kp LSHIFT  &kp DE_C             &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_O                                &kp DE_D   &kp DE_T    &kp DE_N      &kp DE_R    &kp DE_H  &kp LSHIFT
-&kp LCTRL   &kp DE_V             &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp LG(TAB)    &tog 3  &kp DE_W   &kp DE_G    &kp DE_COMMA  &kp DE_DOT  &kp DE_K  &kp RCTRL
-                                 &kp LGUI  &kp LALT         &kp BACKSPACE    &kp DE_SPACE     &mo 1          &mo 2   &kp ENTER  &kp DELETE  &kp RALT      &kp RGUI
+&kp ESCAPE  &mm_nr1   &mm_nr2   &mm_nr3          &mm_nr4          &mm_nr5                                 &mm_nr6    &mm_nr7     &mm_nr8       &mm_nr9     &mm_nr0   &mm_nrss
+&kp TAB     &kp DE_Z  &kp DE_Y  &kp DE_U         &kp DE_A         &kp DE_Q                                &kp DE_P   &kp DE_B    &kp DE_M      &kp DE_L    &kp DE_F  &kp DE_J
+&kp LSHIFT  &kp DE_C  &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_O                                &kp DE_D   &kp DE_T    &kp DE_N      &kp DE_R    &kp DE_H  &kp LSHIFT
+&kp LCTRL   &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &kp LG(TAB)    &tog 3  &kp DE_W   &kp DE_G    &kp DE_COMMA  &kp DE_DOT  &kp DE_K  &kp RCTRL
+                      &kp LGUI  &kp LALT         &kp BACKSPACE    &kp DE_SPACE     &mo 1          &mo 2   &kp ENTER  &kp DELETE  &kp RALT      &kp RGUI
             >;
 
             sensor-bindings =
-                <&inc_dec_kp TAB LS(TAB)>,
+                <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
                 <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
@@ -103,16 +193,16 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp DE_CARET  &kp DE_ACUTE        &kp DE_SQT           &kp DE_AT              &kp DE_SQT              &none                               &kp DE_FSLH   &kp DE_AMPS  &kp DE_SECTION  &kp DE_TILDE   &kp DE_EURO     &kp DE_DOLLAR
-&trans        &kp DE_EXCLAMATION  &kp DE_QUESTION      &mod_morph_underscore  &kp DE_DOUBLE_QUOTES    &kp DE_PIPE                         &kp DE_PLUS   &kp DE_N7    &kp DE_N8       &kp DE_N9      &kp DE_SLASH    &kp DE_HASH
-&trans        &kp DE_LESS_THAN    &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE      &mod_dance_parantheses  &kp DE_SLASH                        &kp DE_MINUS  &kp DE_N4    &kp DE_N5       &kp DE_N6      &kp DE_PERCENT  &trans
-&trans        &kp DE_GT           &kp DE_RBKT          &kp DE_RIGHT_BRACE     &kp DE_RPAR             &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK  &kp DE_N1    &kp DE_N2       &kp DE_N3      &kp DE_EQUAL    &trans
-                                  &trans               &trans                 &trans                  &trans            &trans    &trans  &trans        &kp DE_N0    &kp DE_COMMA    &kp DE_PERIOD
+&trans  &kp DE_ACUTE      &kp DE_GRAVE         &kp DE_AMPERSAND    &kp DE_AT                &none                               &kp DE_FSLH   &kp DE_EURO  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_SECTION  &kp DE_CARET
+&trans  &kp DE_PIPE       &kp DE_UNDERSCORE    &kp DE_MINUS        &kp DE_DOUBLE_QUOTES     &kp DE_SQT                          &kp DE_PLUS   &kp DE_N7    &kp DE_N8      &kp DE_N9       &kp DE_HASH     &none
+&trans  &kp DE_LESS_THAN  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE   &kp DE_LEFT_PARENTHESIS  &kp DE_SLASH                        &kp DE_MINUS  &kp DE_N4    &kp DE_N5      &kp DE_N6       &kp DE_TILDE    &trans
+&trans  &kp DE_GT         &kp DE_RBKT          &kp DE_RIGHT_BRACE  &kp DE_RPAR              &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK  &kp DE_N1    &kp DE_N2      &kp DE_N3       &kp DE_EQUAL    &trans
+                          &trans               &trans              &trans                   &trans            &trans    &trans  &trans        &kp DE_N0    &kp DE_COMMA   &kp DE_PERIOD
             >;
 
             sensor-bindings =
                 <&inc_dec_kp UP_ARROW DOWN_ARROW>,
-                <&inc_dec_kp RIGHT_ARROW LEFT_ARROW>;
+                <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
         };
 
         raise_layer {
@@ -126,14 +216,16 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp F1  &kp F2        &kp F3        &kp F4       &kp F5        &kp F6                                              &kp F7         &kp F8       &kp F9    &kp F10    &kp F11  &kp F12
-&trans  &kp LC(DE_Z)  &kp LC(DE_Y)  &kp K_CMENU  &kp LC(DE_A)  &kp INSERT                                          &none          &kp LS(TAB)  &kp UP    &kp TAB    &none    &none
-&trans  &kp LC(DE_C)  &kp LC(DE_S)  &none        &none         &kp PRINTSCREEN                                     &kp PG_UP      &kp LEFT     &kp DOWN  &kp RIGHT  &kp DEL  &trans
-&trans  &kp LC(DE_V)  &kp LC(DE_X)  &none        &none         &none            &kp LG(TAB)    &kp LC(LS(ESCAPE))  &kp PAGE_DOWN  &kp HOME     &none     &kp END    &none    &trans
+&kp F1  &kp F2        &kp F3        &kp F4       &kp F5        &kp F6                                              &kp F7         &kp F8       &kp F9    &kp F10    &kp F11     &kp F12
+&trans  &kp LC(DE_Z)  &kp LC(DE_Y)  &kp K_CMENU  &kp LC(DE_A)  &kp INSERT                                          &kp BACKSPACE  &kp LS(TAB)  &kp UP    &kp TAB    &kp DELETE  &none
+&trans  &kp LC(DE_C)  &kp LC(DE_S)  &none        &none         &kp PRINTSCREEN                                     &kp PG_UP      &kp LEFT     &kp DOWN  &kp RIGHT  &none       &trans
+&trans  &kp LC(DE_V)  &kp LC(DE_X)  &none        &none         &none            &kp LG(TAB)    &kp LC(LS(ESCAPE))  &kp PAGE_DOWN  &kp HOME     &none     &kp END    &none       &trans
                       &trans        &trans       &trans        &trans           &trans         &trans              &trans         &trans       &trans    &trans
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+            sensor-bindings =
+                <&inc_dec_kp TAB LS(TAB)>,
+                <&inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
