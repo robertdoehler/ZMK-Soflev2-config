@@ -2,7 +2,7 @@ layout: {zmk_keyboard: sofle}
 layers:
   default:
   - ESCAPE
-  - '1'
+  - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))', s: '(LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION)))'}
   - '2'
   - '3'
   - '4'
