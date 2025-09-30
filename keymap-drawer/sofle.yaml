@@ -62,7 +62,7 @@ layers:
   - ENTER
   - DELETE
   - RALT
-  - RGUI
+  - APPLICATION
   lower:
   - {t: ▽, type: trans}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS))
