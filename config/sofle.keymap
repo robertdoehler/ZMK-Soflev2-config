@@ -22,14 +22,7 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <LOWER RAISE>;
-            then-layer = <ADJUST>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
         mod_morph_doubleQuote: mod_morph_doubleQuote {
@@ -62,7 +55,7 @@
         mm_nr1: mm_nr1 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR1";
-            bindings = <&kp DE_N1>, <&kp DE_EXCLAMATION>;
+            bindings = <&kp F1>, <&kp DE_EXCLAMATION>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -71,7 +64,7 @@
         mm_nr3: mm_nr3 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR3";
-            bindings = <&kp DE_N3>, <&kp DE_AMPERSAND>;
+            bindings = <&kp F3>, <&kp DE_AMPERSAND>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -80,7 +73,7 @@
         mm_nr4: mm_nr4 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR4";
-            bindings = <&kp DE_N4>, <&kp DE_AT_SIGN>;
+            bindings = <&kp F4>, <&kp DE_AT_SIGN>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -89,7 +82,7 @@
         mm_nr5: mm_nr5 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR5";
-            bindings = <&kp DE_N5>, <&kp DE_HASH>;
+            bindings = <&kp F5>, <&kp DE_HASH>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -98,7 +91,7 @@
         mm_nr6: mm_nr6 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR6";
-            bindings = <&kp DE_N6>, <&kp DE_SQT>;
+            bindings = <&kp F6>, <&kp DE_SQT>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -107,7 +100,7 @@
         mm_nr7: mm_nr7 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR7";
-            bindings = <&kp DE_N7>, <&kp DE_DOUBLE_QUOTES>;
+            bindings = <&kp F7>, <&kp DE_DOUBLE_QUOTES>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -116,7 +109,7 @@
         mm_nr8: mm_nr8 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR8";
-            bindings = <&kp DE_N8>, <&kp DE_MINUS>;
+            bindings = <&kp F8>, <&kp DE_MINUS>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -125,7 +118,7 @@
         mm_nr9: mm_nr9 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR9";
-            bindings = <&kp DE_N9>, <&kp DE_UNDERSCORE>;
+            bindings = <&kp F9>, <&kp DE_UNDERSCORE>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -134,7 +127,7 @@
         mm_nr0: mm_nr0 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR0";
-            bindings = <&kp DE_N0>, <&kp DE_EQUAL>;
+            bindings = <&kp F10>, <&kp DE_EQUAL>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -143,7 +136,7 @@
         mm_nr2: mm_nr2 {
             compatible = "zmk,behavior-mod-morph";
             label = "MM_NR2";
-            bindings = <&kp N2>, <&kp DE_QUESTION>;
+            bindings = <&kp F2>, <&kp DE_QUESTION>;
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
@@ -156,6 +149,15 @@
 
             #binding-cells = <0>;
             mods = <(MOD_RSFT|MOD_LSFT)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        shift {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <54 55>;
         };
     };
 
@@ -182,7 +184,7 @@
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>,
-                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
+                <&inc_dec_kp TAB LS(TAB)>;
         };
 
         lower_layer {
@@ -197,11 +199,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp DE_ACUTE      &kp DE_GRAVE         &kp DE_AMPERSAND    &kp DE_AT                &none                               &kp DE_FSLH   &kp DE_EURO  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_SECTION  &kp DE_CARET
-&trans  &kp DE_PIPE       &kp DE_UNDERSCORE    &kp DE_MINUS        &kp DE_DOUBLE_QUOTES     &kp DE_SQT                          &kp DE_PLUS   &kp DE_N7    &kp DE_N8      &kp DE_N9       &kp DE_HASH     &none
-&trans  &kp DE_LESS_THAN  &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE   &kp DE_LEFT_PARENTHESIS  &kp DE_SLASH                        &kp DE_MINUS  &kp DE_N4    &kp DE_N5      &kp DE_N6       &kp DE_TILDE    &trans
-&trans  &kp DE_GT         &kp DE_RBKT          &kp DE_RIGHT_BRACE  &kp DE_RPAR              &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK  &kp DE_N1    &kp DE_N2      &kp DE_N3       &kp DE_EQUAL    &trans
-                          &trans               &trans              &trans                   &trans            &trans    &trans  &trans        &kp DE_N0    &kp DE_COMMA   &kp DE_PERIOD
+&trans  &kp DE_EXCLAMATION  &kp DE_QUESTION      &kp DE_AMPERSAND    &kp DE_AT                &kp DE_HASH                         &kp DE_FSLH   &kp DE_EURO  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_SECTION  &kp DE_CARET
+&trans  &kp DE_PIPE         &kp DE_UNDERSCORE    &kp DE_MINUS        &kp DE_DOUBLE_QUOTES     &kp DE_SQT                          &kp DE_PLUS   &kp DE_N7    &kp DE_N8      &kp DE_N9       &kp DE_HASH     &none
+&trans  &kp DE_LESS_THAN    &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE   &kp DE_LEFT_PARENTHESIS  &kp DE_SLASH                        &kp DE_MINUS  &kp DE_N4    &kp DE_N5      &kp DE_N6       &kp DE_TILDE    &trans
+&trans  &kp DE_GT           &kp DE_RBKT          &kp DE_RIGHT_BRACE  &kp DE_RPAR              &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK  &kp DE_N1    &kp DE_N2      &kp DE_N3       &kp DE_EQUAL    &trans
+                            &trans               &trans              &trans                   &trans            &trans    &trans  &trans        &kp DE_N0    &kp DE_COMMA   &kp DE_PERIOD
             >;
 
             sensor-bindings =
@@ -220,11 +222,11 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp F1  &kp F2        &kp F3        &kp F4       &kp F5        &kp F6                                              &kp F7         &kp F8       &kp F9    &kp F10    &kp F11     &kp F12
-&trans  &kp LC(DE_Z)  &kp LC(DE_Y)  &kp K_CMENU  &kp LC(DE_A)  &kp INSERT                                          &kp BACKSPACE  &kp LS(TAB)  &kp UP    &kp TAB    &kp DELETE  &none
-&trans  &kp LC(DE_C)  &kp LC(DE_S)  &none        &none         &kp PRINTSCREEN                                     &kp PG_UP      &kp LEFT     &kp DOWN  &kp RIGHT  &none       &trans
-&trans  &kp LC(DE_V)  &kp LC(DE_X)  &none        &none         &none            &kp LG(TAB)    &kp LC(LS(ESCAPE))  &kp PAGE_DOWN  &kp HOME     &none     &kp END    &none       &trans
-                      &trans        &trans       &trans        &trans           &trans         &trans              &trans         &trans       &trans    &trans
+&kp F1  &kp F2        &kp F3        &kp F4      &kp F5        &kp F6                                              &kp F7         &kp F8       &kp F9    &kp F10    &kp F11     &kp F12
+&trans  &kp LC(DE_Z)  &kp LC(DE_Y)  &kp LA(F4)  &kp LC(DE_A)  &kp INSERT                                          &kp BACKSPACE  &kp LS(TAB)  &kp UP    &kp TAB    &kp DELETE  &none
+&trans  &kp LC(DE_C)  &kp LC(DE_S)  &none       &none         &kp PRINTSCREEN                                     &kp PG_UP      &kp LEFT     &kp DOWN  &kp RIGHT  &none       &trans
+&trans  &kp LC(DE_V)  &kp LC(DE_X)  &none       &none         &none            &kp LG(TAB)    &kp LC(LS(ESCAPE))  &kp PAGE_DOWN  &kp HOME     &none     &kp END    &none       &trans
+                      &trans        &trans      &trans        &trans           &trans         &trans              &trans         &trans       &trans    &trans
             >;
 
             sensor-bindings =
