@@ -600,6 +600,7 @@ path.combo {
 <text x="0" y="0" class="key tap">
 <tspan x="0" dy="-1.2em">(ZMK</tspan><tspan x="0" dy="1.2em">HID</tspan><tspan x="0" dy="1.2em">…</tspan>
 </text>
+<text x="0" y="-24" class="key shifted"><tspan style="font-size: 64%">(LS(ZMK HI…</tspan></text>
 </g>
 <g transform="translate(28, 175)" class="key trans keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
