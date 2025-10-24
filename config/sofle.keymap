@@ -208,11 +208,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans  &kp DE_EXCLAMATION  &kp DE_QUESTION      &kp DE_AMPERSAND    &kp DE_AT                &kp DE_HASH                         &kp DE_FSLH   &kp DE_EURO  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_SECTION  &kp DE_CARET
-&trans  &kp DE_PIPE         &kp DE_UNDERSCORE    &kp DE_MINUS        &kp DE_DOUBLE_QUOTES     &kp DE_SQT                          &kp DE_PLUS   &kp DE_N7    &kp DE_N8      &kp DE_N9       &kp DE_HASH     &mod_morph_acute
-&trans  &kp DE_LESS_THAN    &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE   &kp DE_LEFT_PARENTHESIS  &kp DE_SLASH                        &kp DE_MINUS  &kp DE_N4    &kp DE_N5      &kp DE_N6       &kp DE_TILDE    &trans
-&trans  &kp DE_GT           &kp DE_RBKT          &kp DE_RIGHT_BRACE  &kp DE_RPAR              &kp DE_BACKSLASH  &trans    &trans  &kp DE_ASTRK  &kp DE_N1    &kp DE_N2      &kp DE_N3       &kp DE_EQUAL    &trans
-                            &trans               &trans              &trans                   &trans            &trans    &trans  &trans        &kp DE_N0    &kp DE_COMMA   &kp DE_PERIOD
+&trans  &kp DE_EXCLAMATION  &kp DE_QUESTION      &kp DE_AMPERSAND    &kp DE_AT                &kp DE_HASH                         &kp DE_FSLH      &kp DE_EURO  &kp DE_DOLLAR  &kp DE_PERCENT  &kp DE_SECTION  &kp DE_CARET
+&trans  &kp DE_PIPE         &kp DE_UNDERSCORE    &kp DE_MINUS        &kp DE_DOUBLE_QUOTES     &kp DE_SQT                          &kp DE_ASTERISK  &kp DE_N7    &kp DE_N8      &kp DE_N9       &kp DE_HASH     &mod_morph_acute
+&trans  &kp DE_LESS_THAN    &kp DE_LEFT_BRACKET  &kp DE_LEFT_BRACE   &kp DE_LEFT_PARENTHESIS  &kp DE_SLASH                        &kp DE_PLUS      &kp DE_N4    &kp DE_N5      &kp DE_N6       &kp DE_TILDE    &trans
+&trans  &kp DE_GT           &kp DE_RBKT          &kp DE_RIGHT_BRACE  &kp DE_RPAR              &kp DE_BACKSLASH  &trans    &trans  &kp DE_MINUS     &kp DE_N1    &kp DE_N2      &kp DE_N3       &kp DE_EQUAL    &trans
+                            &trans               &trans              &trans                   &trans            &trans    &trans  &trans           &kp DE_N0    &kp DE_COMMA   &kp DE_PERIOD
             >;
 
             sensor-bindings =
