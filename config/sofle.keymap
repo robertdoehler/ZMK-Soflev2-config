@@ -179,10 +179,10 @@
         };
     };
 	
-	&sk {
-		release-after-ms = <2000>;
-		quick-release;
-	};
+//	&sk {
+//		release-after-ms = <2000>;
+//		quick-release;
+//	};
  
     keymap {
         compatible = "zmk,keymap";
