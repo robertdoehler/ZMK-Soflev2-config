@@ -55,8 +55,8 @@ layers:
   - RIGHT ALT
   - lower
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SPACEBAR))
-  - {t: LEFT SHIFT, h: sticky}
   - {t: BACKSPACE, s: DELETE}
+  - {t: LSHIFT, h: sticky}
   - ENTER
   - raise
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))
