@@ -184,11 +184,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE  &mm_nr1   &mm_nr2   &mm_nr3          &mm_nr4          &mm_nr5                                 &mm_nr6    &mm_nr7     &mm_nr8       &mm_nr9            &mm_nr0   &mm_nrss
-&kp TAB     &kp DE_Z  &kp DE_Y  &kp DE_U         &kp DE_A         &kp DE_Q                                &kp DE_P   &kp DE_B    &kp DE_M      &kp DE_L           &kp DE_F  &kp DE_J
-&kp LSHIFT  &kp DE_C  &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_O                                &kp DE_D   &kp DE_T    &kp DE_N      &kp DE_R           &kp DE_H  &kp LSHIFT
-&kp LCTRL   &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &tog 3    &kp LG(TAB)  &kp DE_W   &kp DE_G    &kp DE_COMMA  &kp DE_DOT         &kp DE_K  &kp RCTRL
-                      &kp LGUI  &kp LALT         &kp BACKSPACE    &kp DE_SPACE     &mo 1     &mo 2        &kp ENTER  &kp DELETE  &kp RALT      &kp K_APPLICATION
+&kp ESCAPE    &mm_nr1   &mm_nr2   &mm_nr3          &mm_nr4          &mm_nr5                                 &mm_nr6    &mm_nr7        &mm_nr8       &mm_nr9            &mm_nr0   &mm_nrss
+&kp TAB       &kp DE_Z  &kp DE_Y  &kp DE_U         &kp DE_A         &kp DE_Q                                &kp DE_P   &kp DE_B       &kp DE_M      &kp DE_L           &kp DE_F  &kp DE_J
+&kp LEFT_ALT  &kp DE_C  &kp DE_S  &kp DE_I         &kp DE_E         &kp DE_O                                &kp DE_D   &kp DE_T       &kp DE_N      &kp DE_R           &kp DE_H  &kp LSHIFT
+&kp LCTRL     &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT  &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &tog 3    &kp LG(TAB)  &kp DE_W   &kp DE_G       &kp DE_COMMA  &kp DE_DOT         &kp DE_K  &kp RCTRL
+                        &kp LGUI  &kp RIGHT_ALT    &kp LEFT_SHIFT   &kp DE_SPACE     &mo 1     &mo 2        &kp ENTER  &kp BACKSPACE  &kp DELETE    &kp K_APPLICATION
             >;
 
             sensor-bindings =
