@@ -170,7 +170,7 @@
             compatible = "zmk,behavior-sticky-key";
             #binding-cells = <1>;
             bindings = <&kp>;
-            release-after-ms = <1000>; // your timeout
+            release-after-ms = <500>; // your timeout
             quick-release;             // boolean
             ignore-modifiers;          // keep chaining if you want it
         };
