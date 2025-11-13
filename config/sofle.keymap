@@ -208,7 +208,7 @@
 &kp TAB       &kp DE_Z  &kp DE_Y  &kp DE_U           &kp DE_A         &kp DE_Q                                &kp DE_P   &kp DE_B       &kp DE_M        &kp DE_L    &kp DE_F  &kp DE_J
 &kp LEFT_ALT  &kp DE_C  &kp DE_S  &kp DE_I           &kp DE_E         &kp DE_O                                &kp DE_D   &kp DE_T       &kp DE_N        &kp DE_R    &kp DE_H  &kp LSHIFT
 &kp LCTRL     &kp DE_V  &kp DE_X  &kp DE_U_UMLAUT    &kp DE_A_UMLAUT  &kp DE_O_UMLAUT  &tog 3    &kp LG(TAB)  &kp DE_W   &kp DE_G       &kp DE_COMMA    &kp DE_DOT  &kp DE_K  &kp RCTRL
-                        &kp LGUI  &kp K_APPLICATION  &skq LEFT_SHIFT  &kp DE_SPACE     &mo 1     &mo 2        &kp ENTER  &kp BACKSPACE  &kp DE_SHARP_S  &kp DELETE
+                        &kp LGUI  &kp K_APPLICATION  &kp LEFT_SHIFT   &kp DE_SPACE     &mo 1     &mo 2        &kp ENTER  &kp BACKSPACE  &kp DE_SHARP_S  &kp DELETE
             >;
 
             sensor-bindings =
