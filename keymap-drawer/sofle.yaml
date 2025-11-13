@@ -53,7 +53,7 @@ layers:
   - RCTRL
   - LGUI
   - APPLICATION
-  - {t: LEFT SHIFT, h: sticky}
+  - LEFT SHIFT
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SPACEBAR))
   - lower
   - raise
